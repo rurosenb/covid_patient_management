@@ -36,18 +36,49 @@ const ViewPatient = () => {
     <AppNavBar/>
     <div class="row">
      <div class="col-75">
-      <div class="container1">
-        {patientInfo.firstName + " " + patientInfo.lastName} <br/>
-        {patientInfo.street + " " + patientInfo.houseNumber + " APT: "+ patientInfo.apartmentNumber} <br/>
-        
-        {patientInfo.city + " " + patientInfo.zip} <br/>
-       {"Mobile: " + patientInfo.mobilePhone + " Phone: " + patientInfo.phone} <br/>
-       {"DOB: " + formatedDateOfBirth + " Sex: " + patientInfo.gender} <br/>
-       {"Infection Date: " + formattedInfectionDate}<br/>
-       {"Recovery Date: " + formattedRecoveryDate}<br/>
-        
-        
-       <AddEditVaccine patient={patientInfo} id={id}/>
+      <div class="container2">
+        <h3>Patient Deatails:</h3>
+        <table>
+          <tbody>
+          <tr>
+       <td> {"Name: " }</td>
+       <td> {patientInfo.firstName + " " + patientInfo.lastName } <br/></td>
+        </tr>
+        <tr>
+       <td> {"Address: "} </td>
+       <td>{patientInfo.street + " " + patientInfo.apartmentNumber} <br/></td>
+        </tr>
+        <tr>
+          <td>{"City: "}</td>
+          <td>{patientInfo.city}</td> <br/>
+        </tr>
+        <tr>
+      <td> {"Mobile Phone: "}</td>
+      <td>{patientInfo.mobilePhone} <br/></td>
+       </tr>
+       <tr>
+      <td> {"Date Of Birth: "}</td>
+      <td>{formatedDateOfBirth } <br/></td>
+       </tr>
+       <tr>
+      <td> {"Gender: " } </td>
+      <td>{patientInfo.gender} <br/></td>
+       </tr>
+       <tr>
+       <td>{"Infection Date: " }</td>
+       <td>{ formattedInfectionDate}<br/></td>
+       </tr>
+       <tr>
+       <td>{"Recovery Date: " } </td>
+       <td>{formattedRecoveryDate}<br/></td>
+       </tr>
+       </tbody>
+       </table>
+
+       <h3>Patient Vaccination List:</h3>
+
+       <AddEditVaccine patient={patientInfo}/>
+
    </div>
    </div>
    </div>

@@ -34,7 +34,7 @@ if (!showModalR) return null;
              
             </div>
              </form>
-             {new Date().getFullYear()+"-"+new Date().getMonth()+"-"+new Date().getDate()}
+             {/* {new Date().getFullYear()+"-"+new Date().getMonth()+"-"+new Date().getDate()} */}
             </div>
            
           </div>

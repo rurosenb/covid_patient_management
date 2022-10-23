@@ -138,8 +138,9 @@ const CreatePatient = () => {
             </tr>
             <tr>
            <td> <label htmlFor='DOB'>DOB</label></td>
-           <td>   <input type='date' id='DOB' value={DOB} onChange={(val)=>setDOB(val.target.value)}/><br/></td>
+           <td>   <input type='date' id='DOB' value={DOB} onChange={(val)=>setDOB(val.target.value)} max= {`${new Date().getFullYear()}-${(new Date().getMonth()+1).toString().padStart(2, "0")}-${new Date().getDate().toString().padStart(2, "0")}`}/><br/></td>
             </tr>
+            
             <tr>
           <td>  <label htmlFor='mobilePhone'>Mobile Phone</label></td>
           <td>  <input type='text' id='mobilePhone' value={mobilePhone} onChange={(val)=>setMobilePhone(val.target.value)}/><br/></td>

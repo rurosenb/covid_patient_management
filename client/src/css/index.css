@@ -137,11 +137,12 @@
     border-radius: 3px;
     margin: auto;
     width: 60%;
+    /* height: 100%; */
     border: 1px solid lightgrey;
     padding:10px;
     position: absolute;
     left: 50%;
-    top: 60%;
+    top: 65%;
     transform: translate(-50%, -50%);
   }
   .table {
@@ -161,3 +162,16 @@
   }
   .td {padding:10px 25px 10px 25px;}
   
+  .container2 {
+    background-color: #f2f2f2;
+    border-radius: 3px;
+    margin: auto;
+    width: 60%;
+    /* height: 100%; */
+    border: 1px solid lightgrey;
+    padding:10px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+  }

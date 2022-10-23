@@ -14,10 +14,12 @@ const PatientListItem = ({item, callback}) => {
             data:{id: item._id}
         });
        await callback();
-        
+       alert(`Patient  ${item.firstName} ${item.lastName} is deleted!`);
+
     }
     const editPatient=(item)=>{
       navigate('/createpatient', {state: item});
+
     }
 
   return (
@@ -29,7 +31,8 @@ const PatientListItem = ({item, callback}) => {
     
       <td className='tdthird'> <Link to={`/viewpatient/${item._id}`}>
       {item.firstName} {item.lastName} </Link></td> 
-      <td className='tdthird'><button className="btn btn-secondary btn-lg" onClick={()=>editPatient(item)}>Edit Patient</button> <button className="btn btn-secondary btn-lg" onClick={()=>deletePatient(item)}>Delete</button></td>
+      <td className='tdthird'><button className="btn btn-secondary btn-lg" onClick={()=>editPatient(item)}>Edit Patient</button> 
+      <button className="btn btn-secondary btn-lg" onClick={()=>deletePatient(item)}>Delete</button></td>
      
      </tr>
      </tbody>
