@@ -22,8 +22,13 @@ Project is created with:
   * MongoDb/Mongoose
 	
 ## Setup
-To run this project, install it locally using npm:
+To run this project, install it locally using git clone:
 
+git clone https://github.com/rurosenb/covid_patient_management.git
+
+$ cd covid_patient_management
+
+Run server and client via npm
 ```
 $ cd server
 $ npm install
