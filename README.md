@@ -23,19 +23,18 @@ Project is created with:
 	
 ## Setup
 To run this project, install it locally using git clone:
-
+```
 $ git clone https://github.com/rurosenb/covid_patient_management.git
-
 $ cd covid_patient_management
-
+```
 Run server and client via npm
 ```
 $ cd server
 $ npm install
 $ npm run dev
-
+```
 Start additional terminal
-
+```
 $ cd client
 $ npm install
 $ npm start
