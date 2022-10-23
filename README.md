@@ -24,7 +24,7 @@ Project is created with:
 ## Setup
 To run this project, install it locally using git clone:
 
-git clone https://github.com/rurosenb/covid_patient_management.git
+$ git clone https://github.com/rurosenb/covid_patient_management.git
 
 $ cd covid_patient_management
 
